@@ -431,7 +431,7 @@ void N_add_rec()
         printf("\xB2");
     }
     printf("\n\n\t\t1. Add General Surgeon Nurse\n\t\t2. Add Psychologist Nurse\n\t\t3. Add Pediatrician Nurse\n\t\t4. Add Dentist Nurse\n\t\t5. Add Cardiologist Nurse\n\t\t6. Add Gynecologist Nurse\n\t\t7. Add Sexologist Nurse\n\t\t8. Add Ear And Nose Nurse\n\t\t9. Exit\n");
-    printf("\n\tEnter your choice(1-6): ");
+    printf("\n\tEnter your choice(1-9): ");
     scanf("%d", &choice);
     switch (choice){
     case 1:general_N_add();break;
@@ -884,7 +884,7 @@ void N_list_rec()
         printf("\xB2");
     }
     printf("\n\n\t\t1. List General Surgeon Nurse\n\t\t2. List Psychologist Nurse\n\t\t3. List Pediatrician Nurse\n\t\t4. List Dentist Nurse\n\t\t5. List Cardiologist Nurse\n\t\t6. List Gynecologist Nurse\n\t\t7. List Sexologist Nurse\n\t\t8. List Ear And Nose Nurse\n\t\t9. Exit\n");
-    printf("\n\tEnter your choice(1-6): ");
+    printf("\n\tEnter your choice(1-9): ");
     scanf("%d", &choice);
     switch (choice){
     case 1:general_N_list();break;
@@ -1614,7 +1614,7 @@ void N_Search_rec()
         printf("\xB2");
     }
     printf("\n\n\t\t1. Search General Surgeon Nurse\n\t\t2. Search Psychologist Nurse\n\t\t3. Search Pediatrician Nurse\n\t\t4. Search Dentist Nurse\n\t\t5. Search Cardiologist Nurse\n\t\t6. Search Gynecologist Nurse\n\t\t7. Search Sexologist Nurse\n\t\t8. Search Ear And Nose Nurse\n\t\t9. Exit\n");
-    printf("\n\tEnter your choice(1-6): ");
+    printf("\n\tEnter your choice(1-9): ");
     scanf("%d", &choice);
     switch (choice){
     case 1:general_N_search();break;
@@ -2563,7 +2563,7 @@ void N_Edit_rec()
         printf("\xB2");
     }
     printf("\n\n\t\t1. Edit General Surgeon Nurse\n\t\t2. Edit Psychologist Nurse\n\t\t3. Edit Pediatrician Nurse\n\t\t4. Edit Dentist Nurse\n\t\t5. Edit Cardiologist Nurse\n\t\t6. Edit Gynecologist Nurse\n\t\t7. Edit Sexologist Nurse\n\t\t8. Edit Ear And Nose Nurse\n\t\t9. Exit\n");
-    printf("\n\tEnter your choice(1-6): ");
+    printf("\n\tEnter your choice(1-9): ");
     scanf("%d", &choice);
     switch (choice){
     case 1:general_N_edit();break;
@@ -2607,7 +2607,7 @@ void general_N_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -2674,7 +2674,7 @@ void phy_N_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -2742,7 +2742,7 @@ void ped_N_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -2810,7 +2810,7 @@ void den_N_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -2878,7 +2878,7 @@ void car_N_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -2946,7 +2946,7 @@ void gyn_N_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -3014,7 +3014,7 @@ void sex_N_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -3082,7 +3082,7 @@ void ear_N_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -3143,7 +3143,7 @@ void N_delt_rec()
         printf("\xB2");
     }
     printf("\n\n\t\t1. Delete General Surgeon Nurse\n\t\t2. Delete Psychologist Nurse\n\t\t3. Delete Pediatrician Nurse\n\t\t4. Delete Dentist Nurse\n\t\t5. Delete Cardiologist Nurse\n\t\t6. Delete Gynecologist Nurse\n\t\t7. Delete Sexologist Nurse\n\t\t8. Delete Ear And Nose Nurse\n\t\t9. Exit\n");
-    printf("\n\tEnter your choice(1-6): ");
+    printf("\n\tEnter your choice(1-9): ");
     scanf("%d", &choice);
     switch (choice){
     case 1:general_N_delt();break;
@@ -3655,7 +3655,7 @@ void user_N_list_rec()
         printf("\xB2");
     }
     printf("\n\n\t\t1. List General Surgeon Nurse\n\t\t2. List Psychologist Nurse\n\t\t3. List Pediatrician Nurse\n\t\t4. List Dentist Nurse\n\t\t5. List Cardiologist Nurse\n\t\t6. List Gynecologist Nurse\n\t\t7. List Sexologist Nurse\n\t\t8. List Ear And Nose Nurse\n\t\t9. Exit\n");
-    printf("\n\tEnter your choice(1-6): ");
+    printf("\n\tEnter your choice(1-9): ");
     scanf("%d", &choice);
     switch (choice){
     case 1:user_general_N_list();break;
@@ -4382,7 +4382,7 @@ void user_N_Search_rec()
         printf("\xB2");
     }
     printf("\n\n\t\t1. Search General Surgeon Nurse\n\t\t2. Search Psychologist Nurse\n\t\t3. Search Pediatrician Nurse\n\t\t4. Search Dentist Nurse\n\t\t5. Search Cardiologist Nurse\n\t\t6. Search Gynecologist Nurse\n\t\t7. Search Sexologist Nurse\n\t\t8. Search Ear And Nose Nurse\n\t\t9. Exit\n");
-    printf("\n\tEnter your choice(1-6): ");
+    printf("\n\tEnter your choice(1-9): ");
     scanf("%d", &choice);
     switch (choice){
     case 1:user_general_N_search();break;
