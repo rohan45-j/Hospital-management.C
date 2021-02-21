@@ -2607,7 +2607,7 @@ void general_D_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -2675,7 +2675,7 @@ void phy_D_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -2743,7 +2743,7 @@ void ped_D_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -2811,7 +2811,7 @@ void den_D_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -2879,7 +2879,7 @@ void car_D_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -2947,7 +2947,7 @@ void gyn_D_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -3015,7 +3015,7 @@ void sex_D_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -3083,7 +3083,7 @@ void ear_D_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
