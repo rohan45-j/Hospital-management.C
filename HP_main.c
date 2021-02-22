@@ -7,6 +7,7 @@
 #include"doctor.h"
 #include"nurse.h"
 #include"patient.h"
+#include"blood.h"
 #define MAX 256
 COORD coord={0,0};
 void gotoxy(int x, int y){
@@ -99,10 +100,10 @@ void login(){
     }
     log=fopen("login","r");
     gotoxy(30, 20);
-    printf("Enter UserName:");
+    printf("Enter UserName: ");
     scanf("%s", &user);
     gotoxy(30, 22);
-    printf("Enter Password:");
+    printf("Enter Password: ");
     while (ch != 13){
         ch = getch();
         if (ch != 13 && ch != 8){
@@ -261,46 +262,42 @@ void adminMenu(){
 
 void user_log()
 {
-    system("cls");
     wellcomeScreen();
     timeScreen();
     lginmain();
-    //printf("\n\t\t\t\t\tPress any Key...");
-    getch();
     userMenu();
 }
 void userMenu(){
-    //lginmain();
+
     system("cls");
-    //fixed();
     wellcomeScreen();
     timeScreen();
-    gotoxy(30, 16);
-    printf("\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 User Menu  \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
-    gotoxy(30, 18);
+    gotoxy(36, 17);
+    printf("\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 User Menu  \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
+    gotoxy(36, 20);
     printf("1. Doctor");
-    gotoxy(30, 19);
+    gotoxy(36, 21);
     printf("2. Nurse");
-    gotoxy(30, 20);
+    gotoxy(36, 22);
     printf("3. Patient");
-    gotoxy(30, 21);
+    gotoxy(36, 23);
     printf("4. Blood Bank");
-    gotoxy(30, 22);
+    gotoxy(36, 24);
     printf("5. Medicine Corner");
-    gotoxy(30, 23);
+    gotoxy(36, 25);
     printf("6. Ambulance Service");
-    gotoxy(30, 24);
+    gotoxy(36, 26);
     printf("7. Contact Us");
-    gotoxy(30, 25);
+    gotoxy(36, 27);
     printf("8. Exit");
-    gotoxy(30, 26);
+    gotoxy(38, 30);
     printf("Enter Your Choice(1-8): ");
     scanf("%d", &choice);
     switch (choice){
     case 1:user_doctor();break;
     case 2:user_nurse();break;
     case 3:userPatient();break;
-    // case 4:B_display;break;
+    case 4:user_blood();break;
     // case 5:M_display();break;
     // case 6:A_display();break;
     // case 7:C_display();break;
@@ -317,22 +314,11 @@ void ex_it(void)
     wellcomeScreen();
     timeScreen();
     printf("\n\n\n\n\n\t\t\tTHANK YOU FOR VISITING :):)>\n");
-    //printf("Press any key to continue.....:)>");
     getch();
-    system("cls");
 
 }
 
 
-void blood(){
-    system("cls");
-    printf("\t\t\t\t\t\tBLOOD BANK\n\t\t\t*******************************************************\n");
-    printf("\n\n\t\t1. Add Blood Record\n\t\t2. List Blood Record\n\t\t3. Edit Blood Record\n\t\t4. Exit\n\n");
-    printf("\n\nEnter your choice(1-8): ");
-    scanf("%d", &choice);
-    switch (choice){
-    }
-}
 void payment(){
     system("cls");
     printf("\t\t\t\t\t\tPAYMENT\n\t\t\t*******************************************************\n");
