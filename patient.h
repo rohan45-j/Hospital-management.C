@@ -10,8 +10,7 @@ struct patient
 struct patient p, P_temp;
 void P_add_rec(){
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     gotoxy(30, 15);
     FILE *fptr;
     fptr = fopen("P_record.txt", "a");
@@ -60,8 +59,7 @@ void P_list_rec()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("P_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 list Patient Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -113,8 +111,7 @@ void P_Search_rec()
 {
 	char b[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	//Title();// call Title function
 	FILE *fptr;
 	fptr=fopen("P_record.txt","r");
@@ -210,8 +207,7 @@ void P_Edit_rec()
     char Id[20];
 
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
   	//Title();// call Title window
  		ft=fopen("P_temp.txt","w+");
 	   fptr=fopen("P_record.txt","r");
@@ -320,8 +316,7 @@ void P_delt_rec()
 {
 
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     int lno, ctr = 0;
         char ch;
         FILE *fptr1, *fptr2;
@@ -389,8 +384,7 @@ void P_exit(void)
 {
     system("cls");
     //Title();
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     printf("\n\n\n\n\n\t\t\tTHANK YOU FOR VISITING :):)\n");
     printf("\n\n\t\t\t\tPress Any key for continue...:):)");
     getch();
@@ -403,8 +397,7 @@ void P_exit(void)
 
 void patient(){
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     char d[25] = " PATIENT RECORD  ";
     char ch, user[10], pass[10];
     int i = 0, j;
@@ -450,8 +443,7 @@ void UserP_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("P_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 list Patient Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -503,8 +495,7 @@ void userP_search()
 {
 	char b[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("P_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Patient Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -589,22 +580,19 @@ void userP_search()
 /*void Userexit()
 {
     system("cls");
-    //Title();
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     printf("\n\n\n\n\n\t\t\tTHANK YOU FOR VISITING :):)\n");
     printf("\n\n\t\t\t\tPress Any key for continue...:):)");
     getch();
     userMenu();
     //patient();
 
-}*/
+*/
 
 void userPatient()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     char d[25] = " PATIENT RECORD  ";
     char ch, user[10], pass[10];
     int i = 0, j;
