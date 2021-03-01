@@ -48,4 +48,5 @@ void fixed(){
     gotoxy(142, 13);
     printf("\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
     SetConsoleTextAttribute(A, 3);
+    
 }
