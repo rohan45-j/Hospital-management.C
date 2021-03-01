@@ -12,8 +12,7 @@ struct nurse n, n_temp;
 void general_N_add()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     gotoxy(30, 15);
     FILE *fptr;
     fptr = fopen("G_N_record.txt", "a");
@@ -62,8 +61,7 @@ void general_N_add()
 void phy_N_add()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     gotoxy(30, 15);
     FILE *fptr;
     fptr = fopen("phy_N_record.txt", "a");
@@ -112,8 +110,7 @@ void phy_N_add()
 void ped_N_add()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     gotoxy(30, 15);
     FILE *fptr;
     fptr = fopen("ped_N_record.txt", "a");
@@ -162,8 +159,7 @@ void ped_N_add()
 void den_N_add()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     gotoxy(30, 15);
     FILE *fptr;
     fptr = fopen("den_N_record.txt", "a");
@@ -212,8 +208,7 @@ void den_N_add()
 void car_N_add()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     gotoxy(30, 15);
     FILE *fptr;
     fptr = fopen("car_N_record.txt", "a");
@@ -262,8 +257,7 @@ void car_N_add()
 void gyn_N_add()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     gotoxy(30, 15);
     FILE *fptr;
     fptr = fopen("gyn_N_record.txt", "a");
@@ -312,8 +306,7 @@ void gyn_N_add()
 void sex_N_add()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     gotoxy(30, 15);
     FILE *fptr;
     fptr = fopen("sex_N_record.txt", "a");
@@ -362,8 +355,7 @@ void sex_N_add()
 void ear_N_add()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     gotoxy(30, 15);
     FILE *fptr;
     fptr = fopen("ear_N_record.txt", "a");
@@ -412,8 +404,7 @@ void ear_N_add()
 void N_add_rec()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     char d[25] = " NURSE RECORD  ";
     char ch, user[10], pass[10];
     int i = 0, j;
@@ -431,7 +422,7 @@ void N_add_rec()
         printf("\xB2");
     }
     printf("\n\n\t\t1. Add General Surgeon Nurse\n\t\t2. Add Psychologist Nurse\n\t\t3. Add Pediatrician Nurse\n\t\t4. Add Dentist Nurse\n\t\t5. Add Cardiologist Nurse\n\t\t6. Add Gynecologist Nurse\n\t\t7. Add Sexologist Nurse\n\t\t8. Add Ear And Nose Nurse\n\t\t9. Exit\n");
-    printf("\n\tEnter your choice(1-9): ");
+    printf("\n\tEnter your choice(1-6): ");
     scanf("%d", &choice);
     switch (choice){
     case 1:general_N_add();break;
@@ -450,8 +441,7 @@ void general_N_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("G_N_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 list Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -502,8 +492,7 @@ void phy_N_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("phy_N_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 list Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -554,8 +543,7 @@ void ped_N_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("ped_N_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 list Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -606,8 +594,7 @@ void den_N_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("den_N_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 list Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -658,8 +645,7 @@ void car_N_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("car_N_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 list Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -710,8 +696,7 @@ void gyn_N_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("gyn_N_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 list Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -762,8 +747,7 @@ void sex_N_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("sex_N_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 list Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -814,8 +798,7 @@ void ear_N_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("ear_N_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 list Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -865,8 +848,7 @@ void ear_N_list()
 void N_list_rec()
 {
    system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     char d[25] = " NURSE RECORD  ";
     char ch, user[10], pass[10];
     int i = 0, j;
@@ -884,7 +866,7 @@ void N_list_rec()
         printf("\xB2");
     }
     printf("\n\n\t\t1. List General Surgeon Nurse\n\t\t2. List Psychologist Nurse\n\t\t3. List Pediatrician Nurse\n\t\t4. List Dentist Nurse\n\t\t5. List Cardiologist Nurse\n\t\t6. List Gynecologist Nurse\n\t\t7. List Sexologist Nurse\n\t\t8. List Ear And Nose Nurse\n\t\t9. Exit\n");
-    printf("\n\tEnter your choice(1-9): ");
+    printf("\n\tEnter your choice(1-6): ");
     scanf("%d", &choice);
     switch (choice){
     case 1:general_N_list();break;
@@ -903,8 +885,7 @@ void general_N_search()
 {
     char b[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("G_N_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -992,8 +973,7 @@ void phy_N_search()
 {
     char b[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("phy_N_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -1080,8 +1060,7 @@ void ped_N_search()
 {
     char b[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("ped_N_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -1166,8 +1145,7 @@ void den_N_search()
 {
     char b[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("den_N_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -1252,8 +1230,7 @@ void car_N_search()
 {
     char b[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("car_N_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -1338,8 +1315,7 @@ void gyn_N_search()
 {
     char b[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("gyn_N_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -1424,8 +1400,7 @@ void sex_N_search()
 {
     char b[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("sex_N_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -1510,8 +1485,7 @@ void ear_N_search()
 {
     char b[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("ear_N_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -1595,8 +1569,7 @@ void ear_N_search()
 void N_Search_rec()
 {
 	system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     char d[25] = " NURSE RECORD  ";
     char ch, user[10], pass[10];
     int i = 0, j;
@@ -1614,7 +1587,7 @@ void N_Search_rec()
         printf("\xB2");
     }
     printf("\n\n\t\t1. Search General Surgeon Nurse\n\t\t2. Search Psychologist Nurse\n\t\t3. Search Pediatrician Nurse\n\t\t4. Search Dentist Nurse\n\t\t5. Search Cardiologist Nurse\n\t\t6. Search Gynecologist Nurse\n\t\t7. Search Sexologist Nurse\n\t\t8. Search Ear And Nose Nurse\n\t\t9. Exit\n");
-    printf("\n\tEnter your choice(1-9): ");
+    printf("\n\tEnter your choice(1-6): ");
     scanf("%d", &choice);
     switch (choice){
     case 1:general_N_search();break;
@@ -1638,8 +1611,7 @@ void general_N_edit()
     char Id[20];
 
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
  		ft=fopen("G_N_temp.txt","w+");
 	   fptr=fopen("G_N_record.txt","r");
 	   if(fptr==NULL)
@@ -1752,8 +1724,7 @@ void phy_N_edit()
     char Id[20];
 
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
  		ft=fopen("phy_N_temp.txt","w+");
 	   fptr=fopen("phy_N_record.txt","r");
 	   if(fptr==NULL)
@@ -1866,8 +1837,7 @@ void ped_N_edit()
     char Id[20];
 
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
  		ft=fopen("ped_N_temp.txt","w+");
 	   fptr=fopen("ped_N_record.txt","r");
 	   if(fptr==NULL)
@@ -1980,8 +1950,7 @@ void den_N_edit()
     char Id[20];
 
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
  		ft=fopen("den_N_temp.txt","w+");
 	   fptr=fopen("den_N_record.txt","r");
 	   if(fptr==NULL)
@@ -2094,8 +2063,7 @@ void car_N_edit()
     char Id[20];
 
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
  		ft=fopen("car_N_temp.txt","w+");
 	   fptr=fopen("car_N_record.txt","r");
 	   if(fptr==NULL)
@@ -2208,8 +2176,7 @@ void gyn_N_edit()
     char Id[20];
 
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
  		ft=fopen("gyn_N_temp.txt","w+");
 	   fptr=fopen("gyn_N_record.txt","r");
 	   if(fptr==NULL)
@@ -2322,8 +2289,7 @@ void sex_N_edit()
     char Id[20];
 
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
  		ft=fopen("sex_N_temp.txt","w+");
 	   fptr=fopen("sex_N_record.txt","r");
 	   if(fptr==NULL)
@@ -2436,8 +2402,7 @@ void ear_N_edit()
     char Id[20];
 
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
  		ft=fopen("ear_N_temp.txt","w+");
 	   fptr=fopen("ear_N_record.txt","r");
 	   if(fptr==NULL)
@@ -2544,8 +2509,7 @@ void ear_N_edit()
 void N_Edit_rec()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     char d[25] = " NURSE RECORD  ";
     char ch, user[10], pass[10];
     int i = 0, j;
@@ -2563,7 +2527,7 @@ void N_Edit_rec()
         printf("\xB2");
     }
     printf("\n\n\t\t1. Edit General Surgeon Nurse\n\t\t2. Edit Psychologist Nurse\n\t\t3. Edit Pediatrician Nurse\n\t\t4. Edit Dentist Nurse\n\t\t5. Edit Cardiologist Nurse\n\t\t6. Edit Gynecologist Nurse\n\t\t7. Edit Sexologist Nurse\n\t\t8. Edit Ear And Nose Nurse\n\t\t9. Exit\n");
-    printf("\n\tEnter your choice(1-9): ");
+    printf("\n\tEnter your choice(1-6): ");
     scanf("%d", &choice);
     switch (choice){
     case 1:general_N_edit();break;
@@ -2581,8 +2545,7 @@ void N_Edit_rec()
 void general_N_delt()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     int lno, ctr = 0;
         char ch;
         FILE *fptr1, *fptr2;
@@ -2607,7 +2570,7 @@ void general_N_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -2648,8 +2611,7 @@ void general_N_delt()
 void phy_N_delt()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     int lno, ctr = 0;
         char ch;
         FILE *fptr1, *fptr2;
@@ -2674,7 +2636,7 @@ void phy_N_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -2716,8 +2678,7 @@ void phy_N_delt()
 void ped_N_delt()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     int lno, ctr = 0;
         char ch;
         FILE *fptr1, *fptr2;
@@ -2742,7 +2703,7 @@ void ped_N_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -2784,8 +2745,7 @@ void ped_N_delt()
 void den_N_delt()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     int lno, ctr = 0;
         char ch;
         FILE *fptr1, *fptr2;
@@ -2810,7 +2770,7 @@ void den_N_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -2852,8 +2812,7 @@ void den_N_delt()
 void car_N_delt()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     int lno, ctr = 0;
         char ch;
         FILE *fptr1, *fptr2;
@@ -2878,7 +2837,7 @@ void car_N_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -2920,8 +2879,7 @@ void car_N_delt()
 void gyn_N_delt()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     int lno, ctr = 0;
         char ch;
         FILE *fptr1, *fptr2;
@@ -2946,7 +2904,7 @@ void gyn_N_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -2988,8 +2946,7 @@ void gyn_N_delt()
 void sex_N_delt()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     int lno, ctr = 0;
         char ch;
         FILE *fptr1, *fptr2;
@@ -3014,7 +2971,7 @@ void sex_N_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -3056,8 +3013,7 @@ void sex_N_delt()
 void ear_N_delt()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     int lno, ctr = 0;
         char ch;
         FILE *fptr1, *fptr2;
@@ -3082,7 +3038,7 @@ void ear_N_delt()
                 return 0;
         }
         //file input
-        printf("\n\n\t\t\t Input Id Number Do You Want To Remove : ");
+        printf("\n\n\t\t\ Input Id Number Do You Want To Remove : ");
         scanf("%d", &lno);
 		lno++;
         // copy all contents to the temporary file except the specific line
@@ -3124,8 +3080,7 @@ void ear_N_delt()
 void N_delt_rec()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     char d[25] = " NURSE RECORD  ";
     char ch, user[10], pass[10];
     int i = 0, j;
@@ -3143,7 +3098,7 @@ void N_delt_rec()
         printf("\xB2");
     }
     printf("\n\n\t\t1. Delete General Surgeon Nurse\n\t\t2. Delete Psychologist Nurse\n\t\t3. Delete Pediatrician Nurse\n\t\t4. Delete Dentist Nurse\n\t\t5. Delete Cardiologist Nurse\n\t\t6. Delete Gynecologist Nurse\n\t\t7. Delete Sexologist Nurse\n\t\t8. Delete Ear And Nose Nurse\n\t\t9. Exit\n");
-    printf("\n\tEnter your choice(1-9): ");
+    printf("\n\tEnter your choice(1-6): ");
     scanf("%d", &choice);
     switch (choice){
     case 1:general_N_delt();break;
@@ -3161,9 +3116,7 @@ void N_delt_rec()
 void N_exit(void)
 {
     system("cls");
-    //Title();
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     printf("\n\n\n\n\n\t\t\tTHANK YOU FOR VISITING :):)\n");
     printf("\n\n\t\t\t\tPress Any key for continue...:):)");
     getch();
@@ -3176,8 +3129,7 @@ void N_exit(void)
 
 void nurse(){
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     char d[25] = " NURSE RECORD  ";
     char ch, user[10], pass[10];
     int i = 0, j;
@@ -3221,8 +3173,7 @@ void user_general_N_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("G_N_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 list Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3273,8 +3224,7 @@ void user_phy_N_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("phy_N_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 list Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3325,8 +3275,7 @@ void user_ped_N_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("ped_N_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 list Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3377,8 +3326,7 @@ void user_den_N_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("den_N_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 list Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3429,8 +3377,7 @@ void user_car_N_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("car_N_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 list Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3481,8 +3428,7 @@ void user_gyn_N_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("gyn_N_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 list Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3533,8 +3479,7 @@ void user_sex_N_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("sex_N_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 list Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3585,8 +3530,7 @@ void user_ear_N_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("ear_N_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 list Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3636,8 +3580,7 @@ void user_ear_N_list()
 void user_N_list_rec()
 {
    system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     char d[25] = " NURSE RECORD  ";
     char ch, user[10], pass[10];
     int i = 0, j;
@@ -3655,7 +3598,7 @@ void user_N_list_rec()
         printf("\xB2");
     }
     printf("\n\n\t\t1. List General Surgeon Nurse\n\t\t2. List Psychologist Nurse\n\t\t3. List Pediatrician Nurse\n\t\t4. List Dentist Nurse\n\t\t5. List Cardiologist Nurse\n\t\t6. List Gynecologist Nurse\n\t\t7. List Sexologist Nurse\n\t\t8. List Ear And Nose Nurse\n\t\t9. Exit\n");
-    printf("\n\tEnter your choice(1-9): ");
+    printf("\n\tEnter your choice(1-6): ");
     scanf("%d", &choice);
     switch (choice){
     case 1:user_general_N_list();break;
@@ -3674,8 +3617,7 @@ void user_general_N_search()
 {
     char b[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("G_N_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3760,8 +3702,7 @@ void user_phy_N_search()
 {
     char b[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("phy_N_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3848,8 +3789,7 @@ void user_ped_N_search()
 {
     char b[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("ped_N_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3934,8 +3874,7 @@ void user_den_N_search()
 {
     char b[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("den_N_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -4020,8 +3959,7 @@ void user_car_N_search()
 {
     char b[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("car_N_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -4106,8 +4044,7 @@ void user_gyn_N_search()
 {
     char b[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("gyn_N_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -4192,8 +4129,7 @@ void user_sex_N_search()
 {
     char b[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("sex_N_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -4278,8 +4214,7 @@ void user_ear_N_search()
 {
     char b[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("ear_N_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Nurse Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -4363,8 +4298,7 @@ void user_ear_N_search()
 void user_N_Search_rec()
 {
 	system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     char d[25] = " NURSE RECORD  ";
     char ch, user[10], pass[10];
     int i = 0, j;
@@ -4382,7 +4316,7 @@ void user_N_Search_rec()
         printf("\xB2");
     }
     printf("\n\n\t\t1. Search General Surgeon Nurse\n\t\t2. Search Psychologist Nurse\n\t\t3. Search Pediatrician Nurse\n\t\t4. Search Dentist Nurse\n\t\t5. Search Cardiologist Nurse\n\t\t6. Search Gynecologist Nurse\n\t\t7. Search Sexologist Nurse\n\t\t8. Search Ear And Nose Nurse\n\t\t9. Exit\n");
-    printf("\n\tEnter your choice(1-9): ");
+    printf("\n\tEnter your choice(1-6): ");
     scanf("%d", &choice);
     switch (choice){
     case 1:user_general_N_search();break;
@@ -4414,8 +4348,7 @@ void user_N_Search_rec()
 void user_nurse()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     char d[25] = " NURSE RECORD  ";
     char ch, user[10], pass[10];
     int i = 0, j;
