@@ -12,8 +12,7 @@ struct blood b, b_temp;
 void AP_add()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     gotoxy(30, 15);
     FILE *fptr;
     fptr = fopen("Blood_A+_record.txt", "a");
@@ -59,8 +58,7 @@ void AP_add()
 void AN_add()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     gotoxy(30, 15);
     FILE *fptr;
     fptr = fopen("Blood_A-_record.txt", "a");
@@ -106,8 +104,7 @@ void AN_add()
 void BP_add()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     gotoxy(30, 15);
     FILE *fptr;
     fptr = fopen("Blood_B+_record.txt", "a");
@@ -153,8 +150,7 @@ void BP_add()
 void BN_add()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     gotoxy(30, 15);
     FILE *fptr;
     fptr = fopen("Blood_B-_record.txt", "a");
@@ -200,8 +196,7 @@ void BN_add()
 void ABP_add()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     gotoxy(30, 15);
     FILE *fptr;
     fptr = fopen("Blood_AB+_record.txt", "a");
@@ -247,8 +242,7 @@ void ABP_add()
 void ABN_add()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     gotoxy(30, 15);
     FILE *fptr;
     fptr = fopen("Blood_AB-_record.txt", "a");
@@ -294,8 +288,7 @@ void ABN_add()
 void OP_add()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     gotoxy(30, 15);
     FILE *fptr;
     fptr = fopen("Blood_O+_record.txt", "a");
@@ -341,8 +334,7 @@ void OP_add()
 void ON_add()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     gotoxy(30, 15);
     FILE *fptr;
     fptr = fopen("Blood_O-_record.txt", "a");
@@ -388,8 +380,7 @@ void ON_add()
 void blood_add()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     char d[25] = " BLOOD ADD RECORD  ";
     char ch, user[10], pass[10];
     int i = 0, j;
@@ -428,8 +419,7 @@ void AP_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_A+_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Blood Record List \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -476,8 +466,7 @@ void AN_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_A-_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Blood Record List \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -524,8 +513,7 @@ void BP_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_B+_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Blood Record List \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -572,8 +560,7 @@ void BN_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_B-_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Blood Record List \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -620,8 +607,7 @@ void ABP_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_AB+_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Blood Record List \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -668,8 +654,7 @@ void ABN_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_AB-_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Blood Record List \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -716,8 +701,7 @@ void OP_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_O+_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Blood Record List \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -764,8 +748,7 @@ void ON_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_O-_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Blood Record List \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -811,8 +794,7 @@ void ON_list()
 void blood_list()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     char d[25] = " BLOOD RECORD  ";
     char ch, user[10], pass[10];
     int i = 0, j;
@@ -851,8 +833,7 @@ void AP_search()
 {
     char a[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_A+_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Blood Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -933,8 +914,7 @@ void AN_search()
 {
     char a[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_A-_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Blood Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -1015,8 +995,7 @@ void BP_search()
 {
     char a[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_B+_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Blood Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -1097,8 +1076,7 @@ void BN_search()
 {
     char a[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_B-_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Blood Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -1179,8 +1157,7 @@ void ABP_search()
 {
     char a[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_AB+_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Blood Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -1260,8 +1237,7 @@ void ABN_search()
 {
     char a[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_AB-_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Blood Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -1342,8 +1318,7 @@ void OP_search()
 {
     char a[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_O+_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Blood Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -1424,8 +1399,7 @@ void ON_search()
 {
     char a[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_O-_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Blood Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -1505,8 +1479,7 @@ void ON_search()
 void blood_Search()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     char d[25] = " BLOOD RECORD  ";
     char ch, user[10], pass[10];
     int i = 0, j;
@@ -1550,8 +1523,7 @@ void AP_edit()
     char Id[20];
 
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
  		ft=fopen("Blood_A+_temp.txt","w+");
 	   fptr=fopen("Blood_A+_record.txt","r");
 	   if(fptr==NULL)
@@ -1658,8 +1630,7 @@ void AN_edit()
     char Id[20];
 
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
  		ft=fopen("Blood_A-_temp.txt","w+");
 	   fptr=fopen("Blood_A-_record.txt","r");
 	   if(fptr==NULL)
@@ -1766,8 +1737,7 @@ void BP_edit()
     char Id[20];
 
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
  		ft=fopen("Blood_B+_temp.txt","w+");
 	   fptr=fopen("Blood_B+_record.txt","r");
 	   if(fptr==NULL)
@@ -1874,8 +1844,7 @@ void BN_edit()
     char Id[20];
 
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
  		ft=fopen("Blood_B-_temp.txt","w+");
 	   fptr=fopen("Blood_B-_record.txt","r");
 	   if(fptr==NULL)
@@ -1982,8 +1951,7 @@ void ABP_edit()
     char Id[20];
 
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
  		ft=fopen("Blood_AB+_temp.txt","w+");
 	   fptr=fopen("Blood_AB+_record.txt","r");
 	   if(fptr==NULL)
@@ -2090,8 +2058,7 @@ void ABN_edit()
     char Id[20];
 
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
  		ft=fopen("Blood_AB-_temp.txt","w+");
 	   fptr=fopen("Blood_AB-_record.txt","r");
 	   if(fptr==NULL)
@@ -2198,8 +2165,7 @@ void OP_edit()
     char Id[20];
 
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
  		ft=fopen("Blood_O+_temp.txt","w+");
 	   fptr=fopen("Blood_O+_record.txt","r");
 	   if(fptr==NULL)
@@ -2306,8 +2272,7 @@ void ON_edit()
     char Id[20];
 
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
  		ft=fopen("Blood_O-_temp.txt","w+");
 	   fptr=fopen("Blood_O-_record.txt","r");
 	   if(fptr==NULL)
@@ -2408,8 +2373,7 @@ void ON_edit()
 void blood_edit()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     char d[25] = " BLOOD RECORD  ";
     char ch, user[10], pass[10];
     int i = 0, j;
@@ -2447,8 +2411,7 @@ void blood_edit()
 void AP_delt()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     int lno, ctr = 0;
         char ch;
         FILE *fptr1, *fptr2;
@@ -2508,8 +2471,7 @@ void AP_delt()
 void AN_delt()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     int lno, ctr = 0;
         char ch;
         FILE *fptr1, *fptr2;
@@ -2569,8 +2531,7 @@ void AN_delt()
 void BP_delt()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     int lno, ctr = 0;
         char ch;
         FILE *fptr1, *fptr2;
@@ -2630,8 +2591,7 @@ void BP_delt()
 void BN_delt()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     int lno, ctr = 0;
         char ch;
         FILE *fptr1, *fptr2;
@@ -2691,8 +2651,7 @@ void BN_delt()
 void ABP_delt()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     int lno, ctr = 0;
         char ch;
         FILE *fptr1, *fptr2;
@@ -2752,8 +2711,7 @@ void ABP_delt()
 void ABN_delt()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     int lno, ctr = 0;
         char ch;
         FILE *fptr1, *fptr2;
@@ -2813,8 +2771,7 @@ void ABN_delt()
 void OP_delt()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     int lno, ctr = 0;
         char ch;
         FILE *fptr1, *fptr2;
@@ -2874,8 +2831,7 @@ void OP_delt()
 void ON_delt()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     int lno, ctr = 0;
         char ch;
         FILE *fptr1, *fptr2;
@@ -2935,8 +2891,7 @@ void ON_delt()
 void blood_delt()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     char d[25] = " BLOOD RECORD  ";
     char ch, user[10], pass[10];
     int i = 0, j;
@@ -2974,8 +2929,7 @@ void blood_delt()
 void blood()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     char d[25] = " BLOOD RECORD  ";
     char ch, user[10], pass[10];
     int i = 0, j;
@@ -3015,8 +2969,7 @@ void userAP_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_A+_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Blood Record List \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3063,8 +3016,7 @@ void userAN_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_A-_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Blood Record List \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3111,8 +3063,7 @@ void userBP_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_B+_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Blood Record List \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3159,8 +3110,7 @@ void userBN_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_B-_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Blood Record List \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3207,8 +3157,7 @@ void userABP_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_AB+_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Blood Record List \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3255,8 +3204,7 @@ void userABN_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_AB-_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Blood Record List \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3303,8 +3251,7 @@ void userOP_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_O+_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Blood Record List \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3351,8 +3298,7 @@ void userON_list()
 {
     int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_O-_record.txt","r");
 	    printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Blood Record List \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3398,8 +3344,7 @@ void userON_list()
 void user_blood_list()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     char d[25] = " BLOOD RECORD  ";
     char ch, user[10], pass[10];
     int i = 0, j;
@@ -3438,8 +3383,7 @@ void userAP_search()
 {
     char a[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_A+_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Blood Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3520,8 +3464,7 @@ void userAN_search()
 {
     char a[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_A-_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Blood Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3602,8 +3545,7 @@ void userBP_search()
 {
     char a[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_B+_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Blood Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3684,8 +3626,7 @@ void userBN_search()
 {
     char a[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_B-_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Blood Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3766,8 +3707,7 @@ void userABP_search()
 {
     char a[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_AB+_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Blood Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3847,8 +3787,7 @@ void userABN_search()
 {
     char a[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_AB-_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Blood Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -3929,8 +3868,7 @@ void userOP_search()
 {
     char a[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_O+_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Blood Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -4011,8 +3949,7 @@ void userON_search()
 {
     char a[20]; int row;
 	system("cls");
-	wellcomeScreen();
-	timeScreen();
+	fixed();
 	FILE *fptr;
 	fptr=fopen("Blood_O-_record.txt","r");
     printf("\n\n\n\t\t\t\t\t\t\t\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2 Search Blood Record \xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2\xB2");
@@ -4092,8 +4029,7 @@ void userON_search()
 void userblood_Search()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     char d[25] = " BLOOD RECORD  ";
     char ch, user[10], pass[10];
     int i = 0, j;
@@ -4131,8 +4067,7 @@ void userblood_Search()
 void user_blood()
 {
     system("cls");
-    wellcomeScreen();
-    timeScreen();
+    fixed();
     char d[25] = " BLOOD RECORD  ";
     char ch, user[10], pass[10];
     int i = 0, j;
